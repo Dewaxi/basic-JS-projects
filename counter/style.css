@@ -1,0 +1,94 @@
+@font-face {
+    src: url(./Oxygen-Regular.ttf);
+    font-family: oxygen;
+}
+
+:root {
+    /* CSS HEX */
+--bon-jour: #ecebec;
+--indigo: #6153d6;
+--biloba-flower: #aca4ee;
+--dull-lavender: #9b94df;
+--dull-lavender: #9c8ce5;
+--green-white: #edf0e4;
+--perfume: #c9c2fa;
+--hawkes-blue: #d4d4fc;
+--perano: #bcbcf5;
+}
+
+/*Global styling*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: oxygen, Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--bon-jour);
+}
+
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    border: 3px solid var(--indigo);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1rem 0;
+    box-shadow: 0px 7px 5px #111;
+}
+
+nav{
+    background-color: var(--hawkes-blue);
+    height: 150px;
+    box-shadow: 0 1px 5px #111;
+}
+
+#logo{
+    height: 150px;
+}
+
+.btn-container{
+    margin-top: 6rem;
+}
+.btn{
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 0.6rem;
+    margin: 0rem 0.3rem;
+    background-color: #6153d6;
+    color: #ffff;
+    border: none;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+#counter{
+    font-size: 10rem;
+    color: #111;
+}
+
+#heading{
+    font-size: 3rem;
+    color: #ffff;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    background-color: var(--indigo);
+    margin-top: 1rem;
+    border-radius: 2rem;
+}

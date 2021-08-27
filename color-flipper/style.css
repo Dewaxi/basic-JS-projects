@@ -1,0 +1,110 @@
+@font-face {
+    src: url(./Oxygen-Regular.ttf);
+    font-family: oxygen;
+}
+
+:root {
+    /* CSS HEX */
+--bon-jour: #ecebec;
+--indigo: #6153d6;
+--biloba-flower: #aca4ee;
+--dull-lavender: #9b94df;
+--dull-lavender: #9c8ce5;
+--green-white: #edf0e4;
+--perfume: #c9c2fa;
+--hawkes-blue: #d4d4fc;
+--perano: #bcbcf5;
+}
+
+/*Global styling*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: oxygen, Arial, Helvetica, sans-serif;
+}
+body {
+    background: #f1f5f8;
+}
+
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: var(--hawkes-blue);
+    height: 150px;
+    box-shadow: 0 1px 5px #111;
+}
+
+.nav-container img{
+    height: 150px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-menu{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.nav-links{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--indigo);
+    padding: 0.5rem;
+    
+}
+
+.nav-links:hover{
+   background-color: var(--indigo);
+   border-radius: 1.5rem;
+   color: #fff;
+}
+
+main{
+    min-height: calc(100vh - 150px);
+    display: grid;
+    place-items: center;
+}
+
+.main-container{
+    text-align: center;
+}
+
+.main-container h2{
+    text-align: center;
+    text-transform: capitalize;
+    background: #111;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    
+}
+
+.main-container h2 span{
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    font-size: 24px;
+    box-shadow: 0 0 5px rgb(8, 8, 8);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+}

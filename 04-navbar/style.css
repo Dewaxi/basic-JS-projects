@@ -1,0 +1,119 @@
+@font-face {
+    src: url(./Oxygen-Regular.ttf);
+    font-family: oxygen;
+}
+
+:root {
+    /* CSS HEX */
+--bon-jour: #ecebec;
+--indigo: #6153d6;
+--biloba-flower: #aca4ee;
+--dull-lavender: #9b94df;
+--dull-lavender: #9c8ce5;
+--green-white: #edf0e4;
+--perfume: #c9c2fa;
+--hawkes-blue: #d4d4fc;
+--perano: #bcbcf5;
+--transition: all 0.3s linear;
+}
+
+/*Global styling*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: oxygen, Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--bon-jour);
+}
+
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: var(--hawkes-blue);
+    height: 150px;
+}
+
+#logo{
+    height: 144px;
+}
+
+.toggle{
+    margin-right: 1.5rem;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    
+}
+.bar{
+    background-color: #fff;
+    height: 5px;
+    width: 35px;
+    margin: 5px;
+    transition: var(--transition);
+    transform: translate(5%, 20%);
+}
+
+.navbar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks{
+    background-color: var(--hawkes-blue);
+    border-top: 2px solid #fff;
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.navlinks.is-active{
+    height: 50vh;
+}
+
+.links-menu{
+    padding-top: 2rem;
+}
+.nav-link{
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--indigo);
+    transition: var(--transition);
+   
+}
+
+.nav-link:hover{
+    background-color: var(--indigo);
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+.nav-li{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.toggle.active .middle-bar{
+    opacity: 0;
+}
+
+.toggle.active .top-bar{
+    transform: translateY(8px) rotate(45deg);
+}
+
+.toggle.active .bottom-bar{
+    transform: translateY(-8px) rotate(-45deg);
+}
+

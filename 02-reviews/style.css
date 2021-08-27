@@ -1,0 +1,168 @@
+@font-face {
+    src: url(./Oxygen-Regular.ttf);
+    font-family: oxygen;
+}
+
+:root {
+    /* CSS HEX */
+--bon-jour: #ecebec;
+--indigo: #6153d6;
+--biloba-flower: #aca4ee;
+--dull-lavender: #9b94df;
+--dull-lavender: #9c8ce5;
+--green-white: #edf0e4;
+--perfume: #c9c2fa;
+--hawkes-blue: #d4d4fc;
+--perano: #bcbcf5;
+}
+
+/*Global styling*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: oxygen, Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--bon-jour);
+}
+
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+nav{
+    background-color: var(--hawkes-blue);
+    height: 150px;
+    box-shadow: 0 1px 5px #111;
+}
+
+#logo{
+    height: 150px;
+}
+
+main{
+    padding-top: 2rem;
+}
+
+.title{
+    text-align: center;
+}
+.title h1{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.underline{
+    background-color: var(--indigo);
+    width: 100px;
+    height: 5px;
+    margin-top: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-container{
+    background-color: var(--indigo);
+    width: 85%;
+    margin: 5rem auto;
+    border: 3px solid #fff;
+    height: fit-content;
+    
+}
+
+.review-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    position: relative;
+    bottom: 90px;
+    border: 3px solid #fff;
+}
+
+#person-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+#author, #job, #message{
+    color: #fff;
+}
+
+#job{
+    text-transform: uppercase;
+    color: #c9c2fa;
+}
+
+#author, #job{
+    font-size: large;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#message{
+    padding: 2px 10px;
+    text-align: center;
+}
+
+#buttons-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+#buttons-container button{
+   margin: 0 1rem;
+   padding: 0.5rem 1rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   cursor: pointer;
+   border: none;
+}
+
+#buttons-container button:hover{
+   background-color: var(--dull-lavender);
+   color: #fff;
+   box-shadow: 0px 0px 5px #111;
+ }
+
+@media screen and (min-width: 650px) {
+    .reviews-container{
+        width: 600px;
+    }
+    
+}
